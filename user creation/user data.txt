@@ -1,4 +1,4 @@
-user1;arn:aws:iam::aws:policy/AmazonEC2FullAccess
-user2;arn:aws:iam::aws:policy/AmazonVPCFullAccess
-user3;arn:aws:iam::aws:policy/AmazonS3FullAccess
-user4;arn:aws:iam::aws:policy/job-function/SupportUser
+user1;user policy
+user2;user policy
+user3;user policy
+user4;user policy
