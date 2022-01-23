@@ -1,0 +1,18 @@
+for user in `cat userdata`
+do
+  username=`echo ${user}|cut -d";" -f1`
+  `aws iam create-user --user-name ${username}`
+done
+
+for policyattach in `cat userdata`
+do
+  username=`echo ${policyattach}|cut -d";" -f1`
+  policyarn=`echo ${policyattach}|cut -d";" -f2`
+  `aws iam attach-user-policy --policy-arn ${policyarn} --user-name ${username}`
+done
+
+for cred in `cat userdata`
+do
+  username=`echo ${cred}|cut -d";" -f1`
+  echo `aws iam create-access-key --user-name ${username}`>${username}.txt
+done
