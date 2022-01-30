@@ -1,2 +1,2 @@
-aws codes
+aws commands
 
