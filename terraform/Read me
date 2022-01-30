@@ -1,0 +1,9 @@
+Prerequisites
+To follow this tutorial you will need:
+•	The Terraform CLI installed.
+•	The AWS CLI installed.
+•	An AWS account.
+•	Your AWS credentials. You can create a new Access Key on this page.
+Configure the AWS CLI from your terminal. Follow the prompts to input your AWS Access Key ID and Secret Access Key.
+
+$ aws configure
